@@ -1,0 +1,36 @@
+{
+  "version": "3",
+  "data": {
+    "uuid": "05637de1-c043-48c4-bd8a-72741b9761ca",
+    "title": "Primacy-resource-exp2-5items",
+    "description": "Separate input and output position, induce binding",
+    "groupStudy": false,
+    "dirName": "primacy-resource-exp2-5items",
+    "comments": "",
+    "jsonData": null,
+    "componentList": [
+      {
+        "uuid": "3bc705be-9840-4e1d-8fe5-aa37f2529ac7",
+        "title": "Primacy-resource-exp2-5items",
+        "htmlFilePath": "index.html",
+        "reloadable": true,
+        "active": true,
+        "comments": "",
+        "jsonData": null
+      }
+    ],
+    "batchList": [
+      {
+        "uuid": "22716d69-256e-4c83-9257-3885f7ae0e01",
+        "title": "Default",
+        "active": true,
+        "maxActiveMembers": null,
+        "maxTotalMembers": null,
+        "maxTotalWorkers": null,
+        "allowedWorkerTypes": null,
+        "comments": null,
+        "jsonData": null
+      }
+    ]
+  }
+}

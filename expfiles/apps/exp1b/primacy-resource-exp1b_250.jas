@@ -1,0 +1,36 @@
+{
+  "version": "3",
+  "data": {
+    "uuid": "2f75462f-ba88-4fd5-95d6-ee2c8bead9dc",
+    "title": "Primacy-resource-exp1b_250",
+    "description": "Pilot experiment with only words, and a reset screen.",
+    "groupStudy": false,
+    "dirName": "primacy-resource-exp1b_250",
+    "comments": "",
+    "jsonData": null,
+    "componentList": [
+      {
+        "uuid": "c5719f9c-25b0-4069-9c1b-771fd449a16f",
+        "title": "Primacy-resource-exp1b_250",
+        "htmlFilePath": "index.html",
+        "reloadable": true,
+        "active": true,
+        "comments": "",
+        "jsonData": null
+      }
+    ],
+    "batchList": [
+      {
+        "uuid": "a4d76495-b8a8-4834-8641-8109ceff419c",
+        "title": "Default",
+        "active": true,
+        "maxActiveMembers": null,
+        "maxTotalMembers": null,
+        "maxTotalWorkers": null,
+        "allowedWorkerTypes": null,
+        "comments": null,
+        "jsonData": null
+      }
+    ]
+  }
+}
