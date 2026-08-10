@@ -74,7 +74,7 @@
 
 **Response:**
 
-I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars. Because the design is fully within-subject, ordinary between-subject CIs would overstate the uncertainty of the condition comparisons, so I computed 95% within-subject confidence intervals using the Cousineau (2005) subject-mean normalization with the Morey (2008) correction. The figure captions state this method, and the references have been added. As the reviewer anticipated, the CIs are small relative to the key effects: the List 1 primacy × set-size differences and the overlap of the List 2 curves across set sizes are clearly separated beyond their error bars, supporting the descriptive interpretation of these trends.
+I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars. Because the design is fully within-subject, ordinary between-subject CIs would overstate the uncertainty of the condition comparisons, so I computed 95% within-subject confidence intervals using subject-mean normalization with the correction described by Morey (2008). The figure captions state this method, and the reference has been added. As the reviewer anticipated, the CIs are small relative to the key effects: the List 1 primacy × set-size differences and the overlap of the List 2 curves across set sizes are clearly separated beyond their error bars, supporting the descriptive interpretation of these trends.
 
 **R1.5 — Model simulations**
 
