@@ -74,27 +74,19 @@ The experiment used a 2x6x2 mixed design – trial type (standard vs reset; with
 
 ### Results
 
-The results are shown in Figures 2-4. In standard trials, participants reconstructed the order of one to six words, a typical immediate working memory task. It demonstrated a standard serial position and set size effects (Oberauer, 2003) (Figure 2, left), serving as a sanity check. Despite expecting List 1 to become irrelevant on half of the trials, participants still memorized it, and their resources should have been depleted proportionately to the set size.
+The results are shown in Figure 2 (see also Figures S1 and S2 in the supplemental materials). In standard trials, participants reconstructed the order of one to six words, a typical immediate working memory task. It demonstrated a standard serial position and set size effects (Oberauer, 2003) (Figure 2, left), serving as a sanity check. Despite expecting List 1 to become irrelevant on half of the trials, participants still memorized it, and their resources should have been depleted proportionately to the set size.
 
-The key finding concerns List 2 performance on Reset trials. If the primacy effect is solely due to resource depletion, and if the resource recovers passively over time, List 2 should be greatly influenced by List 1's set size. However, as Figure 2 (right) indicates, this was not the case. Although a statistically significant effect was observed (ΔAIC = -6, χ<sup>2</sup>(1) = 7.94, *p* = 0.005; likelihood-ratio test comparing nested logistic mixed-effects models of accuracy with and without a List 1 set size term), it was minimal compared to the set size effect on List 1 performance. Figure 3 further illustrates this, presenting the same data from the right panel of Figure 2 but based on the absolute serial position since the start of the trial. The absolute serial position within the trial has little impact; rather, it is the relative serial position within List 2 that determines performance.
+The key finding concerns List 2 performance on Reset trials. If the primacy effect is solely due to resource depletion, and if the resource recovers passively over time, List 2 should be greatly influenced by List 1's set size. However, as Figure 2 (right) indicates, this was not the case. Although a statistically significant effect was observed (ΔAIC = -6, χ<sup>2</sup>(1) = 7.94, *p* = 0.005; likelihood-ratio test comparing nested logistic mixed-effects models of accuracy with and without a List 1 set size term), it was minimal compared to the set size effect on List 1 performance. Figure S1 further illustrates this, presenting the same data from the right panel of Figure 2 but based on the absolute serial position since the start of the trial. The absolute serial position within the trial has little impact; rather, it is the relative serial position within List 2 that determines performance.
 
 ![Figure 2](media/fig2_exp1_accuracy_by_trial_type.svg)
 
 **Figure 2.** Serial order reconstruction accuracy in Experiment 1 as a function of trial type (standard vs reset trials), serial position within list (1-6) and the set size of List 1. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
-The resource depletion account predicts a smooth, continuous curve over absolute serial positions – the fact that a reset signal has appeared should not affect the available resources, and performance should continue to drop. However, a distinct "resetting effect" can be observed (dashed line in Figure 4). Once the reset signal appears, memory for the first item in List 2 returns to the same level, regardless of List 1's length. Figure 4 demonstrates this by plotting performance for both lists as if they were a single list, even though they were never tested together. This effect contradicts the predictions of the SAC model without the need for inferential statistics. It appears that List 1 was mostly purged from working memory, aligning with recent findings on directed forgetting in working memory (Dames & Oberauer, 2021; Lewis-Peacock et al., 2018; Oberauer, 2018).
-
-![Figure 3](media/fig3_exp1_list2_absolute_position.svg)
-
-**Figure 3.** Accuracy in List 2 in Experiment 1 as a function of serial position relative to the start of the trial. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
-
-![Figure 4](media/fig4_exp1_absolute_position_by_setsize.svg)
-
-**Figure 4.** Accuracy in Experiment 1 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
+The resource depletion account predicts a smooth, continuous curve over absolute serial positions – the fact that a reset signal has appeared should not affect the available resources, and performance should continue to drop. However, a distinct "resetting effect" can be observed (dashed line in Figure S2). Once the reset signal appears, memory for the first item in List 2 returns to the same level, regardless of List 1's length. Figure S2 demonstrates this by plotting performance for both lists as if they were a single list, even though they were never tested together. This effect contradicts the predictions of the SAC model without the need for inferential statistics. It appears that List 1 was mostly purged from working memory, aligning with recent findings on directed forgetting in working memory (Dames & Oberauer, 2021; Lewis-Peacock et al., 2018; Oberauer, 2018).
 
 ## Experiment 2 – Random Order Probed Recall
 
-One issue with Experiment 1 is that input and output positions were confounded. Words presented first were expected to be clicked on first, which can lead to performance decline due to output interference (Criss et al., 2011; Oberauer, 2003). Previous studies show that primacy effects occur even when input and output positions are dissociated (Oberauer, 2003). However, Experiment 1's resetting may be solely due to the absence of output interference since List 1 was never tested. Experiment 2 aimed to replicate the results of Experiment 1 without this confound by using a random probe memory task with letters presented in different spatial positions. At test, a random position was highlighted and participants had to respond with the item presented in the highlighted position during study, allowing evaluation of the primacy effect independently of the testing order (Figure 5).
+One issue with Experiment 1 is that input and output positions were confounded. Words presented first were expected to be clicked on first, which can lead to performance decline due to output interference (Criss et al., 2011; Oberauer, 2003). Previous studies show that primacy effects occur even when input and output positions are dissociated (Oberauer, 2003). However, Experiment 1's resetting may be solely due to the absence of output interference since List 1 was never tested. Experiment 2 aimed to replicate the results of Experiment 1 without this confound by using a random probe memory task with letters presented in different spatial positions. At test, a random position was highlighted and participants had to respond with the item presented in the highlighted position during study, allowing evaluation of the primacy effect independently of the testing order (Figure 3).
 
 ### Method
 
@@ -104,27 +96,27 @@ A total of 100 native English speakers aged 18-30 were recruited via Prolific. A
 
 #### Procedure, materials, and design
 
-The procedure was identical to Experiment 1, except for the following changes (see Figure 5). The maximum length of List 1 was reduced to 5 items, and the length of List 2 was also reduced to 5 items. Latin consonants (B, C, D, F, G, J, K, L, M, N, P, Q, S, T, V, X, Z) were presented instead of words. The reset signal consisted of three red number signs (“###”) instead of X’s, and the instructions were adapted accordingly. As in Experiment 1, letters were drawn without replacement within a trial, so no letter appeared in both List 1 and List 2 of the same trial. Ten empty square frames arranged in a circle were shown at the beginning of each trial. Each letter appeared in one random frame location. A letter always appeared in one of the previously unused during the list frames. The number of experimental trials was increased to 60, and the between-subject manipulation of the reset duration was eliminated – the reset duration was 250 ms for all participants.
+The procedure was identical to Experiment 1, except for the following changes (see Figure 3). The maximum length of List 1 was reduced to 5 items, and the length of List 2 was also reduced to 5 items. Latin consonants (B, C, D, F, G, J, K, L, M, N, P, Q, S, T, V, X, Z) were presented instead of words. The reset signal consisted of three red number signs (“###”) instead of X’s, and the instructions were adapted accordingly. As in Experiment 1, letters were drawn without replacement within a trial, so no letter appeared in both List 1 and List 2 of the same trial. Ten empty square frames arranged in a circle were shown at the beginning of each trial. Each letter appeared in one random frame location. A letter always appeared in one of the previously unused during the list frames. The number of experimental trials was increased to 60, and the between-subject manipulation of the reset duration was eliminated – the reset duration was 250 ms for all participants.
 
-![Figure 5](media/fig5_exp2_procedure.svg)
+![Figure 3](media/fig3_exp2_procedure.svg)
 
-**Figure 5**. Illustration of the procedure for Experiment 2. During test, frames were highlighted in a random order.
+**Figure 3**. Illustration of the procedure for Experiment 2. During test, frames were highlighted in a random order.
 
 The test was replaced with a random order probed recall (Oberauer, 2003). After the green question mark appeared, one of the frames in which a letter had appeared was highlighted at random and participants had to type the letter they had seen in the highlighted box. After their response was recorded, another frame was highlighted at random, and this process continued until all items from List 1 (in the standard condition) or List 2 (in the reset condition) were tested.
 
 ### Results
 
-All results were identical to Experiment 1. A primacy effect of similar magnitude occurred on both standard and reset trials even though input and output position were dissociated (Figure 6). More importantly, the primacy effect was reset just as well as in Experiment 1, suggesting that this was not due to a confound with output position[^3]. In contrast to Experiment 1, the small effect of List 1 set size was not even significant, ΔAIC = 0, χ<sup>2</sup>(1) = 2.14, *p* = 0.14.
+All results were identical to Experiment 1. A primacy effect of similar magnitude occurred on both standard and reset trials even though input and output position were dissociated (Figure 4). More importantly, the primacy effect was reset just as well as in Experiment 1 (see also Figures S3 and S4 in the supplemental materials), suggesting that this was not due to a confound with output position[^3]. In contrast to Experiment 1, the small effect of List 1 set size was not even significant, ΔAIC = 0, χ<sup>2</sup>(1) = 2.14, *p* = 0.14.
 
-![Figure 6](media/fig6_exp2_absolute_position_by_setsize.svg)
+![Figure 4](media/fig4_exp2_accuracy_by_trial_type.svg)
 
-**Figure 6.** Accuracy in Experiment 2 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
+**Figure 4.** Probed recall accuracy in Experiment 2 as a function of trial type (standard vs reset trials), serial position within list (1-5) and the set size of List 1. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
 ## General Discussion
 
 **VP:** Both experiments show that a brief signal can completely reset the primacy effect in working memory. Participants seem to clear their working memory when they learn that the first list is irrelevant, which prevents interference with new information. This is consistent with other recent results showing that participants can selectively remove information from working memory (Dames & Oberauer, 2021; Lewis-Peacock et al., 2018; Oberauer, 2018).
 
-**IC:** Agreed. Figure 4 and Figure 6 are particularly noteworthy – it is as if the list before the reset signal was never presented. Maybe participants did not learn List 1 because on half of the trials it would be a waste of time and cognitive resources?
+**IC:** Agreed. Figure S2 and Figure S4 are particularly noteworthy – it is as if the list before the reset signal was never presented. Maybe participants did not learn List 1 because on half of the trials it would be a waste of time and cognitive resources?
 
 **VP:** Unlikely. If that were the case, memory for List 1 on standard trials would be much worse. In both experiments, participants showed typical memory effects for List 1, including overall memory, set size, and serial position effects. Comparing set size 6 List 1 and List 2, there was little difference, indicating participants tried to remember both lists.
 
@@ -154,9 +146,25 @@ This study was not preregistered. The experimental software, data and analysis c
 
 ## Supplemental Materials
 
-![Figure S1](media/figS1_exp2_input_output_position.svg)
+![Figure S1](media/figS1_exp1_list2_absolute_position.svg)
 
-**Figure S1.** Input vs output position effects on List 2 performance in Experiment 2. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
+**Figure S1.** Accuracy in List 2 in Experiment 1 as a function of serial position relative to the start of the trial. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
+
+![Figure S2](media/figS2_exp1_absolute_position_by_setsize.svg)
+
+**Figure S2.** Accuracy in Experiment 1 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
+
+![Figure S3](media/figS3_exp2_list2_absolute_position.svg)
+
+**Figure S3.** Accuracy in List 2 in Experiment 2 as a function of serial position relative to the start of the trial. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
+
+![Figure S4](media/figS4_exp2_absolute_position_by_setsize.svg)
+
+**Figure S4.** Accuracy in Experiment 2 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
+
+![Figure S5](media/figS5_exp2_input_output_position.svg)
+
+**Figure S5.** Input vs output position effects on List 2 performance in Experiment 2. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
 ## References
 
@@ -226,4 +234,4 @@ Tan, L., & Ward, G. (2000). A recency-based account of the primacy effect in fre
 
 [^2]: Note that the first list had variable number of items (see the procedure), which made the bootstrap simulation necessary to calculate chance level.
 
-[^3]: As in Oberauer (2003), input and output position had independent effects and performance decreased with increasing both positions. See Figure S1 in the supplemental materials.
+[^3]: As in Oberauer (2003), input and output position had independent effects and performance decreased with increasing both positions. See Figure S5 in the supplemental materials.
