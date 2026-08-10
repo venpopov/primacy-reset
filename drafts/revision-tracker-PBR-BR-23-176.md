@@ -21,7 +21,7 @@ Point-by-point triage of the editor/reviewer comments (see [response-to-reviews-
 | R2.4 | Quote the exact participant instructions | Methods reporting | Low | **Must** — reviewer flags it as "very important" | ☐ | ☐ |
 | R3.1 (M1) | Relate resource/depletion mechanisms to the memory model; unique contribution | Writing / theory | Moderate | **Must** — folded into E2 | ☐ | ☐ |
 | R3.2 (M2) | Clarify overarching message / broader implications | Writing | Moderate | **Must**-ish ("should strive") | ☐ | ☐ |
-| R3.3 (M3) | How SAC handles recency | Writing | Low–Moderate | Consider ("would be beneficial") | ☐ | ☐ |
+| R3.3 (M3) | How SAC handles recency | Writing | Low–Moderate | Consider ("would be beneficial") | ☑ | — (reply only) |
 | R3.4 (M4) | Be explicit about how results impact competing models | Writing / theory | Moderate | **Must** — folded into E1 | ☐ | ☐ |
 
 ## Notes

@@ -185,7 +185,7 @@
 
 **Response:**
 
-*[TODO]*
+The SAC model does accommodate recency: in SAC, item, context, and binding nodes decay exponentially over time toward their base-level strength after activation. Because the most recently studied items have decayed the least by the time of test, this produces a recency effect. A detailed treatment can be found in Popov & Reder (2020). I have not added a discussion of recency to the manuscript itself due to space constraints and because it is not the focus of the present paper.
 
 **R3.4 (M4) — Critical assessment**
 
