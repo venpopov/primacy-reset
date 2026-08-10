@@ -36,6 +36,8 @@
 
 ## Reviewer 1
 
+> The manuscript reports the results of two experiments in which subjects are given a list of words to study and, on some trials, are a given an immediate test (order reconstruction in Exp1; probed recall in Exp2). These trials showed a clear primacy effect that was sensitive to the list length. On other trials subjects study the first list but are then told the first list would not be tested and were given a second list to study followed by a order or probed recall test. These trials also showed a clear primacy effect that was largely uninfluenced by the first list. That is, the primacy effect "reset" between the first and second list. These results are taken as evidence against a strict version of the SAC model's assumption that resources take a certain irreducible amount of time to recover.
+>
 > This manuscript elegantly addresses an important issue of contemporary interest in memory theory. The experiments are generally well designed and the data are clear. I think a version of this manuscript will be of considerable interest to the broad readership of PB&R. One of the most noteworthy aspects of the paper is that the author sets out to directly test a core prediction of his own theoretical framework and then unhesitatingly presents results that disconfirm that prediction. I think many theorists would have taken such unexpected findings a the starting point in a long series of experiments aimed at redeeming the theory, rather than publish them as is in a short report. I hope it is not over the top for me to say that it is rare to see scholarship that so lives up to the ideals of science. That said, I do have some substantive concerns that I hope can be addressed in a revision. As none of these concerns are especially large, I list them in the order they occurred to me.
 
 **Response:**
@@ -161,7 +163,7 @@
 
 *[TODO]*
 
-**R3.1 — Resource clarification**
+**R3.1 (M1) — Resource clarification**
 
 > The concept of attentional resources and their relationship with memory is well-established in the literature, as evidenced by the work of Kahneman and others. However, the manuscript could benefit from a more explicit explanation of how the attention resource and depletion mechanisms relate to the model of memory being presented. It would be valuable to articulate what unique contributions this model makes in terms of understanding memory, given the existing literature.
 
@@ -169,7 +171,7 @@
 
 *[TODO]*
 
-**R3.2 — General implications**
+**R3.2 (M2) — General implications**
 
 > After reading the paper, it remains somewhat unclear what the overarching message is for the model's implications in the broader context of memory research. The authors should strive to clarify how their work contributes to or constrains existing memory models to better explain memory performance. It would be beneficial to elucidate the broader implications of their findings more explicitly.
 
@@ -177,7 +179,7 @@
 
 *[TODO]*
 
-**R3.3 — Recency consideration**
+**R3.3 (M3) — Recency consideration**
 
 > While the primary focus is on the primacy effect, it would be beneficial to acknowledge and address how the SAC model accommodates the effect of recency in memory processes. Providing additional information on this aspect would enhance the comprehensibility of the model's overall framework.
 
@@ -185,7 +187,7 @@
 
 *[TODO]*
 
-**R3.4 — Critical assessment**
+**R3.4 (M4) — Critical assessment**
 
 > The manuscript critiques the primacy model and other existing models, but it could be more explicit in explaining why and how these results have an impact on these models. The authors should clarify how their findings challenge or complement competing accounts in the field and what specific aspects of their model are improved or refined based on the observed results.
 
