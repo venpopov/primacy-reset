@@ -88,11 +88,11 @@ The resource depletion account predicts a smooth, continuous curve over absolute
 
 **Figure 3.** Accuracy in List 2 in Experiment 1 as a function of serial position relative to the start of the trial. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
-## Experiment 2 – Random Order Probed Recall
-
 ![Figure 4](media/fig4_exp1_absolute_position_by_setsize.svg)
 
 **Figure 4.** Accuracy in Experiment 1 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
+
+## Experiment 2 – Random Order Probed Recall
 
 One issue with Experiment 1 is that input and output positions were confounded. Words presented first were expected to be clicked on first, which can lead to performance decline due to output interference (Criss et al., 2011; Oberauer, 2003). Previous studies show that primacy effects occur even when input and output positions are dissociated (Oberauer, 2003). However, Experiment 1's resetting may be solely due to the absence of output interference since List 1 was never tested. Experiment 2 aimed to replicate the results of Experiment 1 without this confound by using a random probe memory task with letters presented in different spatial positions. At test, a random position was highlighted and participants had to respond with the item presented in the highlighted position during study, allowing evaluation of the primacy effect independently of the testing order (Figure 5).
 
