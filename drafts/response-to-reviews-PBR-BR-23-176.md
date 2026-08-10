@@ -58,7 +58,7 @@
 
 **Response:**
 
-*[TODO]*
+The sample size was chosen for convenience and was not determined by a formal power analysis. I have added a statement to this effect to the Participants sections of both experiments.
 
 ### R1.3: Order memory vs. item memory in Exp1
 
@@ -124,7 +124,7 @@ I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars.
 
 **Response:**
 
-*[TODO]*
+Each participant completed 48 experimental trials, preceded by 6 practice and buffer trials. The calculation in the comment assumes that the duration of the reset cue was manipulated within subjects, but it was a between-subjects factor: within each participant the design was 2 (trial type) × 6 (List 1 set size) × 4 replications = 48 trials.  The Materials and design section now states the per-participant total explicitly.
 
 ### R2.2: AIC test specification
 
@@ -132,7 +132,7 @@ I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars.
 
 **Response:**
 
-*[TODO]*
+The reported statistics come from a likelihood-ratio test comparing two nested generalized linear (logistic) mixed-effects models of trial-level accuracy, fit with the *lme4* package in R: one with serial position as the only fixed effect, and one that additionally included List 1 set size. Both models included by-participant random slopes for serial position and set size, and random intercepts for items. The χ² (df = 1) and *p* values come from this likelihood-ratio test, and the ΔAIC compares the same two models. The Results sections of both experiments now specify the test and its degrees of freedom.
 
 ### R2.3: Overlap between List 1 and List 2 stimuli
 
@@ -140,7 +140,7 @@ I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars.
 
 **Response:**
 
-*[TODO]*
+They do not. Within a trial, all items were drawn without replacement, so no word (Experiment 1) or letter (Experiment 2) appeared in both List 1 and List 2 of the same trial, and no item appeared twice within a list.  Note that words did repeat *across* trials, since each participant had a closed pool of 12 words, as stated in the Materials section. The manuscript now states the absence of within-trial overlap explicitly for both experiments.
 
 ### R2.4: Specific instructions to participants
 
@@ -149,7 +149,11 @@ I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars.
 
 **Response:**
 
-*[TODO]*
+Your understanding is correct: participants could not predict whether a given trial would contain a reset signal, they were explicitly told to try to remember all items from the beginning of each list, and they were told they could forget the pre-signal items once the signal appeared. The exact instructions in Experiment 1 read:
+
+*"IMPORTANT! The number of words on each list will vary. Importantly, there are two types of lists. On the first type of list, you will have to remember all of the words on the list and reproduce them in their order. On the second type of list, after one of the words you will see 3 red X symbols in the middle of the screen. [...] This means that the words you have seen so far on this list won't be tested, and you only need to remember the order of the words that appear after the XXX symbol. [...] You will NOT know in advance whether the list will have the XXX symbol in the middle, so do your best to remember all words from the begining. However, if you do see the XXX symbol, feel free to forget the words that came before it."*
+
+Experiment 2 used the same instructions adapted to letters, with three red "#" symbols ("###") as the reset signal. The Procedure sections now quote the key instruction sentences.
 
 ---
 
