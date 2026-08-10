@@ -74,7 +74,7 @@ The sample size was chosen for convenience and was not determined by a formal po
 
 **Response:**
 
-I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars. Because the design is fully within-subject, I computed 95% within-subject confidence intervals using subject-mean normalization with the correction described by Morey (2008). The figure captions state this method, and the reference has been added.
+I agree, and all data figures (Figures 2, 4, and S1–S5 under the revised numbering) now include error bars. Because the design is fully within-subject, I computed 95% within-subject confidence intervals using subject-mean normalization with the correction described by Morey (2008). The figure captions state this method, and the reference has been added.
 
 ### R1.5: Model simulations
 
@@ -90,7 +90,7 @@ I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars.
 
 **Response:**
 
-*[TODO]*
+I agree, and the figures are now fully parallel across the two experiments. The main text presents the same single visualization for both experiments — accuracy as a function of trial type, serial position within list, and List 1 set size (Figure 2 for Experiment 1, Figure 4 for Experiment 2). The other two visualizations are now provided for *both* experiments in the Supplemental Materials: List 2 accuracy by absolute serial position (Figures S1 and S3), and accuracy across both lists by absolute serial position, split by set size (Figures S2 and S4). All in-text references have been renumbered accordingly.
 
 ### R1.7: Why would resources deplete at all if they can be reset?
 
