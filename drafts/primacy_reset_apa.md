@@ -80,19 +80,19 @@ The key finding concerns List 2 performance on Reset trials. If the primacy effe
 
 ![Figure 2](media/fig2_exp1_accuracy_by_trial_type.svg)
 
-**Figure 2.** Serial order reconstruction accuracy in Experiment 1 as a function of trial type (standard vs reset trials), serial position within list (1-6) and the set size of List 1.
+**Figure 2.** Serial order reconstruction accuracy in Experiment 1 as a function of trial type (standard vs reset trials), serial position within list (1-6) and the set size of List 1. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
 The resource depletion account predicts a smooth, continuous curve over absolute serial positions – the fact that a reset signal has appeared should not affect the available resources, and performance should continue to drop. However, a distinct "resetting effect" can be observed (dashed line in Figure 4). Once the reset signal appears, memory for the first item in List 2 returns to the same level, regardless of List 1's length. Figure 4 demonstrates this by plotting performance for both lists as if they were a single list, even though they were never tested together. This effect contradicts the predictions of the SAC model without the need for inferential statistics. It appears that List 1 was mostly purged from working memory, aligning with recent findings on directed forgetting in working memory (Dames & Oberauer, 2021; Lewis-Peacock et al., 2018; Oberauer, 2018).
 
 ![Figure 3](media/fig3_exp1_list2_absolute_position.svg)
 
-**Figure 3.** Accuracy in List 2 in Experiment 1 as a function of serial position relative to the start of the trial.
+**Figure 3.** Accuracy in List 2 in Experiment 1 as a function of serial position relative to the start of the trial. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
 ## Experiment 2 – Random Order Probed Recall
 
 ![Figure 4](media/fig4_exp1_absolute_position_by_setsize.svg)
 
-**Figure 4.** Accuracy in Experiment 1 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists.
+**Figure 4.** Accuracy in Experiment 1 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
 One issue with Experiment 1 is that input and output positions were confounded. Words presented first were expected to be clicked on first, which can lead to performance decline due to output interference (Criss et al., 2011; Oberauer, 2003). Previous studies show that primacy effects occur even when input and output positions are dissociated (Oberauer, 2003). However, Experiment 1's resetting may be solely due to the absence of output interference since List 1 was never tested. Experiment 2 aimed to replicate the results of Experiment 1 without this confound by using a random probe memory task with letters presented in different spatial positions. At test, a random position was highlighted and participants had to respond with the item presented in the highlighted position during study, allowing evaluation of the primacy effect independently of the testing order (Figure 5).
 
@@ -118,7 +118,7 @@ All results were identical to Experiment 1. A primacy effect of similar magnitud
 
 ![Figure 6](media/fig6_exp2_absolute_position_by_setsize.svg)
 
-**Figure 6.** Accuracy in Experiment 2 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists.
+**Figure 6.** Accuracy in Experiment 2 as a function of the absolute serial position since the beginning of a trial (x-axis), and the set size of List 1 (different panels). The dashed line in each panel represents the timing of the reset screen. Note that standard and reset trials were tested separately – even though the data is displayed together in one panel, a memory test never tested items from both lists. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
 ## General Discussion
 
@@ -156,7 +156,7 @@ This study was not preregistered. The experimental software, data and analysis c
 
 ![Figure S1](media/figS1_exp2_input_output_position.svg)
 
-**Figure S1.** Input vs output position effects on List 2 performance in Experiment 2.
+**Figure S1.** Input vs output position effects on List 2 performance in Experiment 2. Error bars represent 95% within-subject confidence intervals (Morey, 2008).
 
 ## References
 
@@ -191,6 +191,8 @@ Lewis-Peacock, J. A., Kessler, Y., & Oberauer, K. (2018). The removal of informa
 Ma, S., Popov, V., & Zhang, Q. (2022). A Neural Index Reflecting the Amount of Cognitive Resources Available during Memory Encoding: A Model-based Approach. *BioRxiv*.
 
 Mizrak, E., & Oberauer, K. (2021). What is time good for in working memory? In *Psychological Science*. https://doi.org/10.31234/osf.io/ahqwj
+
+Morey, R. D. (2008). Confidence intervals from normalized data: A correction to Cousineau (2005). *Tutorials in Quantitative Methods for Psychology*, *4*(2), 61–64. https://doi.org/10.20982/tqmp.04.2.p061
 
 Muraven, M., & Baumeister, R. F. (2000). Self-regulation and depletion of limited resources: Does self-control resemble a muscle? *Psychological Bulletin*, *126*(2), 247–259. https://doi.org/10.1037/0033-2909.126.2.247
 

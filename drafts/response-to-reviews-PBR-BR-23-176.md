@@ -74,7 +74,7 @@
 
 **Response:**
 
-*[TODO]*
+I agree, and all data figures (Figures 2–4, 6, and S1) now include error bars. Because the design is fully within-subject, I computed 95% within-subject confidence intervals using subject-mean normalization with the correction described by Morey (2008). The figure captions state this method, and the reference has been added.
 
 **R1.5 — Model simulations**
 

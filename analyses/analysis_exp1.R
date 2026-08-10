@@ -75,6 +75,7 @@ dat <- filter(dat, trial > 6)
 # PLOTS                                                                  ####
 #############################################################################!
 
+source('analyses/utils.R')
 
 
 # accuracy as a function of setsize
@@ -89,55 +90,56 @@ dat %>%
 
 
 # accuracy as a function of response_position and setsize
-dat %>% 
+dat %>%
   filter(is.na(practice), trial > 6) %>%  # exclude practice and buffer trials
-  mutate(trial_type = ifelse(trial_type == "first", " Standard trials: List 1 accuracy", "Reset trials: List 2 accuracy")) %>% 
+  mutate(trial_type = ifelse(trial_type == "first", " Standard trials: List 1 accuracy", "Reset trials: List 2 accuracy")) %>%
+  summary_wsci("acc", c("trial_type", "setsize", "response_position")) %>%
   ggplot(aes(response_position, acc, color=as.factor(setsize), shape=as.factor(setsize), fill=as.factor(setsize))) +
-  stat_summary(geom="point") +
-  stat_summary(geom="line") +
+  geom_errorbar(aes(ymin=acc-ci, ymax=acc+ci), width=0.25, linewidth=0.3, show.legend=FALSE) +
+  geom_point() +
+  geom_line() +
   scale_color_discrete('Set size of List 1') +
   scale_fill_discrete('Set size of List 1') +
   scale_shape_manual('Set size of List 1', values=c(21,22,23,24,25, 3)) +
   facet_wrap(~trial_type) +
   xlab('Serial position within list') +
   ylab('Serial Order Reconstruction Accuracy') +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank())
+  theme_paper()
 ggsave('figures/exp1_acc_by_trial_type_l1setsize_serial_position.svg', width=6.5, height=3, units='in')
 
 
-dat %>% 
+dat %>%
   filter(is.na(practice), trial > 6, trial_type == "full") %>%  # exclude practice and buffer trials
-  ggplot(aes(as.factor(response_position+setsize), acc, color=as.factor(setsize), shape=as.factor(setsize), fill=as.factor(setsize), group=as.factor(setsize))) +
-  stat_summary(geom="point") +
-  stat_summary(geom="line") +
+  mutate(shifted_sp = response_position + setsize) %>%
+  summary_wsci("acc", c("setsize", "shifted_sp")) %>%
+  ggplot(aes(as.factor(shifted_sp), acc, color=as.factor(setsize), shape=as.factor(setsize), fill=as.factor(setsize), group=as.factor(setsize))) +
+  geom_errorbar(aes(ymin=acc-ci, ymax=acc+ci), width=0.25, linewidth=0.3, show.legend=FALSE) +
+  geom_point() +
+  geom_line() +
   scale_color_discrete('Set size of List 1') +
   scale_fill_discrete('Set size of List 1') +
   scale_shape_manual('Set size of List 1', values=c(21,22,23,24,25, 3)) +
   xlab('Serial position from begining of the trial') +
   ylab('List 2 Accuracy') +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank())
+  theme_paper()
 ggsave('figures/exp1_acc_shifted_sp.svg', width=4.5, height=3, units='in')
 
 
-dat %>% 
+dat %>%
   filter(is.na(practice), trial > 6) %>%  # exclude practice and buffer trials
-  mutate(abs_resp_pos = ifelse(trial_type == "first", response_position, response_position+setsize)) %>% 
+  mutate(abs_resp_pos = ifelse(trial_type == "first", response_position, response_position+setsize)) %>%
+  summary_wsci("acc", c("trial_type", "setsize", "abs_resp_pos")) %>%
   ggplot(aes(as.factor(abs_resp_pos), acc, color=trial_type, group=trial_type, shape=trial_type)) +
-  stat_summary(geom="point") +
-  stat_summary(geom="line") +
+  geom_errorbar(aes(ymin=acc-ci, ymax=acc+ci), width=0.25, linewidth=0.3, show.legend=FALSE) +
+  geom_point() +
+  geom_line() +
   xlab('Serial position from begining of the trial') +
   ylab('Accuracy') + 
   scale_color_discrete('', labels=c("List 1 (standard trials)", "List 2 (reset trials)")) +
   scale_shape_discrete('', labels=c("List 1 (standard trials)", "List 2 (reset trials)")) +
   facet_wrap(~setsize) +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        legend.position = "bottom") +
+  theme_paper() +
+  theme(legend.position = "bottom") +
   geom_vline(data=filter(dat, setsize==1), aes(xintercept=1.5), color='darkgrey', linetype="dotdash") +
   geom_vline(data=filter(dat, setsize==2), aes(xintercept=2.5), color='darkgrey', linetype="dotdash") +
   geom_vline(data=filter(dat, setsize==3), aes(xintercept=3.5), color='darkgrey', linetype="dotdash") +

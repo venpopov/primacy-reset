@@ -10,7 +10,7 @@ Point-by-point triage of the editor/reviewer comments (see [response-to-reviews-
 | R1.1 | Other theories of primacy, discussed earlier (e.g., start-of-list tag) | Writing / theory | Moderate–High | **Must** — same thread as E1 | ☐ | ☐ |
 | R1.2 | How was sample size determined? | Methods reporting | Trivial | **Must** | ☐ | ☐ |
 | R1.3 | Order memory vs. item memory distinction in Exp1 | Writing | Low–Moderate | **Must** (a "should be discussed") | ☐ | ☐ |
-| R1.4 | Add error bars (95% CIs) to figures | Analysis / figures | Low–Moderate | **Must** | ☐ | ☐ |
+| R1.4 | Add error bars (95% CIs) to figures | Analysis / figures | Low–Moderate | **Must** | ☑ | ☑ (within-subject 95% CIs) |
 | R1.5 | Include SAC model simulations, not just asserted predictions | New computational work | High — biggest single item | Strongly urged — treat as must unless well rebutted | ☐ | ☐ |
 | R1.6 | Consistent figure sets across Exp1 and Exp2 | Figures | Low | Must fix or justify | ☐ | ☐ |
 | R1.7 | Why would resources deplete at all if resettable? | Writing / theory | Moderate | **Must** — R1's "biggest criticism," echoed by editor | ☐ | ☐ |
