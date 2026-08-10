@@ -75,23 +75,7 @@ dat <- filter(dat, trial > 6)
 # PLOTS                                                                  ####
 #############################################################################!
 
-# within-subject 95% CIs via the Cousineau (2005) method with Morey (2008)
-# correction: aggregate to subject x cell means, remove each subject's overall
-# mean, then widen the CI by sqrt(J/(J-1)) for J within-subject cells
-summary_wsci <- function(data, dv, within, id = "id") {
-  cellmeans <- data %>%
-    group_by(across(all_of(c(id, within)))) %>%
-    summarise(.y = mean(.data[[dv]], na.rm = TRUE), .groups = "drop")
-  grand <- mean(cellmeans$.y)
-  J <- nrow(distinct(cellmeans[, within, drop = FALSE]))
-  cellmeans %>%
-    group_by(across(all_of(id))) %>%
-    mutate(.norm = .y - mean(.y) + grand) %>%
-    group_by(across(all_of(within))) %>%
-    summarise(acc = mean(.y),
-              ci = qt(0.975, n() - 1) * sd(.norm) / sqrt(n()) * sqrt(J / (J - 1)),
-              .groups = "drop")
-}
+source('analyses/utils.R')
 
 
 # accuracy as a function of setsize
@@ -120,9 +104,7 @@ dat %>%
   facet_wrap(~trial_type) +
   xlab('Serial position within list') +
   ylab('Serial Order Reconstruction Accuracy') +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank())
+  theme_paper()
 ggsave('figures/exp1_acc_by_trial_type_l1setsize_serial_position.svg', width=6.5, height=3, units='in')
 
 
@@ -139,9 +121,7 @@ dat %>%
   scale_shape_manual('Set size of List 1', values=c(21,22,23,24,25, 3)) +
   xlab('Serial position from begining of the trial') +
   ylab('List 2 Accuracy') +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank())
+  theme_paper()
 ggsave('figures/exp1_acc_shifted_sp.svg', width=4.5, height=3, units='in')
 
 
@@ -158,10 +138,8 @@ dat %>%
   scale_color_discrete('', labels=c("List 1 (standard trials)", "List 2 (reset trials)")) +
   scale_shape_discrete('', labels=c("List 1 (standard trials)", "List 2 (reset trials)")) +
   facet_wrap(~setsize) +
-  theme_bw() +
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        legend.position = "bottom") +
+  theme_paper() +
+  theme(legend.position = "bottom") +
   geom_vline(data=filter(dat, setsize==1), aes(xintercept=1.5), color='darkgrey', linetype="dotdash") +
   geom_vline(data=filter(dat, setsize==2), aes(xintercept=2.5), color='darkgrey', linetype="dotdash") +
   geom_vline(data=filter(dat, setsize==3), aes(xintercept=3.5), color='darkgrey', linetype="dotdash") +
