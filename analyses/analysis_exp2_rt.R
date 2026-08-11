@@ -102,7 +102,8 @@ p1 <- rt %>%
   labs(x = "Response time (s)", y = "Count",
        title = "Raw scale (truncated at 10 s)",
        subtitle = paste0(n_above10, " responses (",
-                         round(100 * n_above10 / nrow(rt), 2), "%) above 10 s not shown")) +
+                         round(100 * n_above10 / nrow(rt), 2), "%) above 10 s not shown"),
+       caption = "All responses (correct and incorrect)") +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 ggsave('figures/exp2_rt_hist_raw.svg', p1, width = 5, height = 3.5, units = 'in')
@@ -112,7 +113,8 @@ p2 <- rt %>%
   ggplot(aes(rt)) +
   geom_histogram(bins = 80, fill = "grey40", color = "white", linewidth = 0.1) +
   scale_x_log10(breaks = c(0.1, 0.3, 1, 3, 10, 30, 100)) +
-  labs(x = "Response time (s, log scale)", y = "Count", title = "Log scale (full range)") +
+  labs(x = "Response time (s, log scale)", y = "Count", title = "Log scale (full range)",
+       caption = "All responses (correct and incorrect)") +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 ggsave('figures/exp2_rt_hist_log.svg', p2, width = 5, height = 3.5, units = 'in')
@@ -168,7 +170,8 @@ wsci_rt(relabel_tt(rtc), c("trial_type", "setsize")) %>%
   xlab('Set size of List 1') +
   ylab('Mean RT (s)') +
   theme_paper() +
-  theme(legend.position = "bottom")
+  theme(legend.position = "bottom") +
+  labs(caption = "All responses (correct and incorrect)")
 ggsave('figures/exp2_rt_by_setsize.svg', width = 4, height = 3.5, units = 'in')
 
 ## 2) RT by input serial position and List 1 set size (mirror of Figure 4) ----
@@ -183,7 +186,8 @@ wsci_rt(relabel_tt(rtc), c("trial_type", "setsize", "input_position")) %>%
   facet_wrap(~trial_type) +
   xlab('Input serial position within list') +
   ylab('Mean RT (s)') +
-  theme_paper()
+  theme_paper() +
+  labs(caption = "All responses (correct and incorrect)")
 ggsave('figures/exp2_rt_by_trial_type_l1setsize_serial_position.svg', width = 6.5, height = 3, units = 'in')
 
 # robustness check: same figure on the log scale (geometric means, back-transformed)
@@ -202,7 +206,8 @@ rtc %>%
   facet_wrap(~trial_type) +
   xlab('Input serial position within list') +
   ylab('Geometric mean RT (s)') +
-  theme_paper()
+  theme_paper() +
+  labs(caption = "All responses (correct and incorrect)")
 ggsave('figures/exp2_rt_geomean_by_trial_type_l1setsize_serial_position.svg', width = 6.5, height = 3, units = 'in')
 
 ## 3) RT by output (testing) position and List 1 set size ----
@@ -217,7 +222,8 @@ wsci_rt(relabel_tt(rtc), c("trial_type", "setsize", "response_position")) %>%
   facet_wrap(~trial_type) +
   xlab('Output (testing) position') +
   ylab('Mean RT (s)') +
-  theme_paper()
+  theme_paper() +
+  labs(caption = "All responses (correct and incorrect)")
 ggsave('figures/exp2_rt_by_output_position.svg', width = 6.5, height = 3, units = 'in')
 
 ## 4) RT by input x output position (mirror of Figure S5, both trial types) ----
@@ -232,7 +238,8 @@ wsci_rt(relabel_tt(rtc), c("trial_type", "response_position", "input_position"))
   facet_wrap(~trial_type) +
   xlab('Input serial position within list') +
   ylab('Mean RT (s)') +
-  theme_paper()
+  theme_paper() +
+  labs(caption = "All responses (correct and incorrect)")
 ggsave('figures/exp2_rt_input_vs_output_position.svg', width = 6.5, height = 3, units = 'in')
 
 ## 5) List 2 RT by serial position from the beginning of the trial ----
@@ -249,7 +256,8 @@ rtc %>%
   scale_shape_manual('Set size of List 1', values = c(21, 22, 23, 24, 25, 3)) +
   xlab('Serial position from begining of the trial') +
   ylab('List 2 Mean RT (s)') +
-  theme_paper()
+  theme_paper() +
+  labs(caption = "All responses (correct and incorrect)")
 ggsave('figures/exp2_rt_shifted_sp.svg', width = 4.5, height = 3, units = 'in')
 
 ## 6) RT by absolute serial position, both lists (mirror of Figure S4) ----
@@ -271,7 +279,8 @@ rtc %>%
   geom_vline(data = filter(rtc, setsize == 2), aes(xintercept = 2.5), color = 'darkgrey', linetype = "dotdash") +
   geom_vline(data = filter(rtc, setsize == 3), aes(xintercept = 3.5), color = 'darkgrey', linetype = "dotdash") +
   geom_vline(data = filter(rtc, setsize == 4), aes(xintercept = 4.5), color = 'darkgrey', linetype = "dotdash") +
-  geom_vline(data = filter(rtc, setsize == 5), aes(xintercept = 5.5), color = 'darkgrey', linetype = "dotdash")
+  geom_vline(data = filter(rtc, setsize == 5), aes(xintercept = 5.5), color = 'darkgrey', linetype = "dotdash") +
+  labs(caption = "All responses (correct and incorrect)")
 ggsave('figures/exp2_rt_abs_sp_both_lists.svg', width = 6, height = 4, units = 'in')
 
 #############################################################################!
